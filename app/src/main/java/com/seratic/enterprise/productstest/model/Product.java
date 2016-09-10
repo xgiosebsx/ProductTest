@@ -1,13 +1,18 @@
 package com.seratic.enterprise.productstest.model;
 
+import com.orm.SugarRecord;
+
 /**
  * Created by Administrador on 10/09/2016.
  */
-public class Product {
+public class Product extends SugarRecord {
     String image;
     String name;
     String price;
     String brand;
+
+    public Product() {
+    }
 
     public Product(String image, String price, String name, String brand) {
         this.image = image;
